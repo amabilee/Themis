@@ -1,0 +1,411 @@
+.containerDesktop {
+    padding: 90px 85px;
+    height: 100vh;
+    animation: opacityUp 0.8s;
+    background-color: #F7F7F7;
+}
+
+.boxContainerDesktop {
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 610px;
+    height: 610px;
+}
+
+.headContainerDesktop {
+    padding: 25px 30px;
+    border-bottom: 1px solid #E9EAED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bodyContainerDesktop {
+    display: flex;
+    flex-direction: column;
+}
+
+.gerenciaContainer {
+    height: 100px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.searchBoxHistory {
+    padding: 10px 30px;
+    border-bottom: 1px solid #E9EAED;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.searchBoxInputs {
+    width: 72%;
+}
+
+.searchBoxSelect {
+    margin: 0 0 0 20px;
+    padding: 0px 10px;
+    height: 35px;
+    border: 1px solid #696C73;
+    border-radius: 10px;
+    font-size: 13px;
+    width: 200px;
+}
+
+.searchBoxButtons {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tableClients {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableClients thead {
+    height: 40px;
+    display: block;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.tableClients thead tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+.tableClients thead tr th {
+    font-size: 15px;
+    padding: 5px 0px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #515151;
+}
+
+.tableClients tbody {
+    height: 370px;
+    display: block;
+    overflow: auto;
+    width: 100%;
+}
+
+.tableClients tbody tr {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #E9EAED;
+    background-color: white;
+    padding: 0px 0px;
+}
+
+.tableClients tbody tr td {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableClients tbody tr td:last-child {
+    flex-direction: row;
+}
+
+.tableClients thead tr th {
+    width: 18%;
+}
+
+.tableClients tbody tr td {
+    width: 18%;
+    color: #505050;
+    font-weight: 300;
+}
+
+.tableClients tbody tr td:last-child,
+.tableClients thead tr th:last-child {
+    width: 10%;
+}
+
+.tableClients thead tr th:last-child {
+    border-radius: 0 20px 0 0;
+    margin-right: 13px;
+}
+
+.tableClients thead tr th:nth-child(1) {
+    border-radius: 20px 0 0 0;
+}
+
+.processoAtivo {
+    background-color: #E2F3E3;
+    color: #67A46D;
+    border-radius: 10px;
+    width: 50%;
+    height: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.processoFechado {
+    background-color: #FFDDDD;
+    color: #FF8484;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select1{
+    width: 400px;
+    min-width: 200px;
+    margin: 0 20px 0 0
+}
+.select1 input, .select2 input{
+    font-size: 13px;
+    font-weight: 400;
+}
+.select2{
+    width: 200px;
+    min-width: 200px;
+    margin: 0 20px 0 0
+}
+
+.css-1jqq78o-placeholder, .css-1dimb5e-singleValue{
+    font-size: 13px;
+    font-weight: 400;
+}
+/*Pop Ups*/
+
+.popUpContainer {
+    background-color: #00000088;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    animation: opacityUp 0.3s;
+}
+
+.popUpCard {
+    height: 590px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.popUpHead {
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.popupHeadHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.popUpCloseIcon {
+    background: url('../../assets/closeIcon.svg');
+    height: 27px;
+    width: 27px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.popUpBody {
+    padding: 0px 30px 25px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.popUpNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0 250px;
+    border-bottom: 1px solid #D4D4D4;
+    margin: 30px 0;
+}
+
+.popUpSectionOne,
+.popUpSectionTwo {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    animation: opacityUp 0.5s ease-out;
+}
+
+.popUpSectionOne-disabled,
+.popUpSectionTwo-disabled {
+    width: 100%;
+    height: 50%;
+    display: none;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.popUpCreateLineOne,
+.popUpCreateLineTwo,
+.popUpCreateLineThree,
+.popUpCreateLineFour,
+.popUpCreateLineFive,
+.popUpCreateLineSix,
+.popUpSearchLineOne,
+.popUpSearchLineTwo,
+.popUpSearchLineThree,
+.popUpSearchLineFour,
+.popUpSearchLineFive,
+.popUpSearchLineSix {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 15px 0;
+}
+
+.popUpCreateLineOne div input,
+.popUpCreateLineOne div select,
+.popUpCreateLineTwo div input,
+.popUpCreateLineTwo div select,
+.popUpCreateLineTwo div select,
+.popUpCreateLineThree div input,
+.popUpCreateLineFour div input,
+.popUpCreateLineFour div select,
+.popUpCreateLineFive div:nth-child(1) input,
+.popUpCreateLineFive div:nth-child(2) input,
+.popUpCreateLineFive div:nth-child(3) input,
+.popUpCreateLineSix div input,
+.popUpSearchLineOne div input,
+.popUpSearchLineTwo div input,
+.popUpSearchLineTwo div select,
+.popUpSearchLineThree div input,
+.popUpSearchLineFour div input,
+.popUpSearchLineFour div select,
+.popUpSearchLineFive div:nth-child(1) input,
+.popUpSearchLineFive div:nth-child(2) input,
+.popUpSearchLineFive div:nth-child(3) input,
+.popUpSearchLineSix div input {
+    border: 1px solid #B8B8B8;
+    border-radius: 5px;
+}
+
+.popUpCreateLineSix,
+.popUpCreateLineThree,
+.popUpSearchLineSix {
+    padding: 0 0 40px 0;
+}
+
+.popUpCreateProcessoLineSix {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.popUpButtons {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.popUpButtonsSectionOne {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.popUpSearchSection {
+    height: 380px;
+    max-height: 380px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #D4D4D4;
+
+}
+
+.popUpButtonsSearch {
+    width: 100%;
+    margin: 0 0 -20px 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 20px 20px 0px 0;
+}
+
+
+
+
+
+
+
+
+
+/*TABLE STYLES*/
+
+.tableRequests {
+    border-radius: 10px;
+    height: 500px;
+    min-height: 70px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.tableRequests table {
+    width: 100%;
+}
+
+.tableRequests table tbody tr td {
+    border-bottom: 1px solid #E9EAED;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}

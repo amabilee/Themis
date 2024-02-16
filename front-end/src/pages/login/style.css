@@ -1,0 +1,573 @@
+/* Login Page Style */
+
+.body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loadingSection {
+    animation: opacityUp 2s;
+    width: 100%;
+    height: 20%;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F9F2DF;
+}
+
+.loadingIconLeave {
+    display: none;
+}
+
+.loadingPage {
+    background-color: #F9F2DF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loadingSectionSmall {
+    display: none;
+}
+
+.loginSection {
+    height: 470px;
+    width: 350px;
+    animation: opacityUp 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardLogin {
+    padding: 50px 40px 0 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    animation: opacityUp 2s;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-body {
+    height: 100%;
+}
+
+.versionText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.blocker {
+    width: 0;
+    height: 0;
+    z-index: 99;
+    position: absolute;
+    background-color: #000000;
+}
+
+/* Images Styles */
+
+.logo-uni {
+    background: url('../../assets/logoUni.svg');
+    height: 27px;
+    width: 157px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 10px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.logo-img {
+    background: url('../../assets/logoThemis.svg');
+    height: 70px;
+    width: 226px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.loading {
+    background: url('../../assets/loading.svg');
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px auto 0;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .blocker {
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+    }
+}
+
+
+
+
+
+/*BASE STYLES*/
+
+
+
+
+/*Alignment*/
+
+.margin-bottom-10 {
+    margin: 0 0 10px 0;
+}
+
+.margin-bottom-5 {
+    margin: 0 0 5px 0;
+}
+
+.margin-left-30 {
+    margin: 0 0 0 200px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+
+/*Text Size*/
+
+
+.heading-3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.heading-4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.body-medium {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.body-normal {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.body-light {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+/*Text Color*/
+
+
+.text-color-1 {
+    color: #5A5A5A;
+}
+
+.text-color-5 {
+    color: #696C73;
+}
+
+.text-color-6 {
+    color: #ffffff;
+}
+
+/*Form*/
+
+
+.form-1 {
+    padding: 0px 10px;
+    height: 38px;
+    min-height: 38px;
+    border: 1px solid #696C73;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    width: 250px;
+    min-width: 250px;
+}
+
+.form-1:focus {
+    border: 2px solid #3391FF;
+}
+
+.form-2 {
+    padding: 0px 10px;
+    height: 38px;
+    min-height: 38px;
+    border: 1px solid #696C73;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    width: 400px;
+    min-width: 400px;
+}
+
+.form-2:focus {
+    border: 2px solid #3391FF;
+}
+
+
+.form-3 {
+    padding: 0px 10px 0px 40px;
+    height: 35px;
+    border: 1px solid #696C73;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 13px;
+    width: 300px;
+    background-image: url('../../assets/searchIcon.svg');
+    background-size: 20px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+
+.searchForms {
+    display: flex;
+    flex-direction: column;
+    margin-right: 17px;
+}
+
+
+/* Animation Styles */
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp2 {
+    from {
+        transform: translateY(50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes heightDown {
+    from {
+        height: 100vh;
+    }
+
+    to {
+        height: 50vh;
+    }
+}
+
+@keyframes opacityUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* @keyframes opacityDown {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+} */
+
+@keyframes swipeLeft {
+    0% {
+        transform: translateX(30%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes swipeRight {
+    0% {
+        transform: translateX(-30%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+/* Error Messages Style */
+
+.border-error{
+    border-top: 1px solid #D4D4D4;
+}
+.error-message-login {
+    position: relative;
+    font-size: 13px;
+    color: red;
+    text-align: center;
+    position: 'absolute';
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.errorContainer {
+    width: 100%;
+}
+
+.error-message{
+    position: relative;
+    font-size: 13px;
+    color: red;
+    text-align: right;
+    margin: 10px 20px 0px 0;
+    position: 'absolute';
+    top: 0;
+    right: 0
+}
+
+/* Button Styles */
+
+.button-1 {
+    border: none;
+    background-color: #5F4B42;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin: 40px 0 0 0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.button-7 {
+    transition: all .5s ease;
+    border: none;
+    background-color: #E8ECF7;
+    color: #2442AF;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+}
+
+.button-7:hover {
+    background-color: #9AB0EE;
+}
+
+.button-8 {
+    transition: all .5s ease;
+    border: none;
+    padding: 8px 10px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #d34545d1;
+}
+
+.button-8:hover {
+    color: #C50202;
+    background-color: #FFBABA;
+}
+
+.button-9 {
+    transition: all .5s ease;
+    text-align: center;
+    border: none;
+    padding: 8px 10px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #5aae53cd;
+    margin: 0 20px 0 30px;
+}
+
+.button-9:hover {
+    color: #0D9D00;
+    background-color: #B1DBAD;
+}
+
+.button-10 {
+    transition: all .5s ease;
+    width: 125px;
+    height: 36px;
+    background-color: #F0AB51;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.button-10:hover {
+    background-color: #987547;
+}
+
+.button-11 {
+    transition: all .5s ease;
+    width: 179px;
+    height: 36px;
+    background-color: #D6BA7F;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.button-11:hover {
+    background-color: #b08d42;
+}
+
+.button-12 {
+    transition: all .5s ease;
+    width: 230px;
+    height: 36px;
+    background-color: #BC7B3A;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.button-12:hover {
+    background-color: rgb(133, 96, 47);
+}
+
+.button-13 {
+    transition: all .5s ease;
+    width: 37px;
+    height: 37px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.button-13:hover {
+    width: 37px;
+    height: 37px;
+    background-color: #E8ECF7;
+    border: none;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.button-16-enable {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(98, 98, 98, 0.249);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-16-enable img, .button-16-disable img{
+    width: 29px;
+    height: 29px;
+}
+.button-16-disable {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.button-17 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+}
+
+.button-nav-enable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 300;
+    border: none;
+    border-bottom: 2px solid #33A5D4;
+    cursor: pointer;
+}
+
+.button-nav-disable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 300;
+    border: none;
+    border-bottom: 2px solid #C9CACA;
+    cursor: pointer;
+}
