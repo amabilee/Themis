@@ -372,7 +372,6 @@ function EstagiarioPage() {
             />
             <PopUpSearch
                 showPopSearch={showPopSearch}
-                returnSearch={() => setShowPopSearch(false)}
                 headerText="Pesquisa avançada"
                 sectionOneContent={
                     <>

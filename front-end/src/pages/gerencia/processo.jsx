@@ -226,6 +226,8 @@ function ProcessoPage() {
                 }
             }
         });
+
+        handleSearchResult(resultadosFiltrados);
     }
 
     function handleSearchAdvanced() { //função para retornar resultados da pesquisa
@@ -710,7 +712,7 @@ function ProcessoPage() {
                             </div>
                             <div className='searchForms'>
                                 <span className='body-light margin-bottom-5 text-color-5'>Estagiário responsável</span>
-                                <input value={processoDataDelete.nomeEstg} className='form-1'style={{ width: '300px', minWidth: '300px' }} />
+                                <input value={processoDataDelete.nomeEstg} className='form-1' style={{ width: '300px', minWidth: '300px' }} />
                             </div>
                         </div>
                         <div className="popUpCreateLineTwo">
@@ -740,15 +742,15 @@ function ProcessoPage() {
                             </div>
                             <div className='searchForms'>
                                 <span className='body-light margin-bottom-5 text-color-5'>Vara</span>
-                                <input value={processoDataDelete.vara} className='form-1'/>
+                                <input value={processoDataDelete.vara} className='form-1' />
                             </div>
                             <div className='searchForms'>
                                 <span className='body-light margin-bottom-5 text-color-5'>Instância</span>
-                                <input value={processoDataDelete.instancia} className='form-1'/>
+                                <input value={processoDataDelete.instancia} className='form-1' />
                             </div>
                             <div className='searchForms'>
                                 <span className='body-light margin-bottom-5 text-color-5'>Tribunal</span>
-                                <input value={processoDataDelete.tribunal} className='form-1'/>
+                                <input value={processoDataDelete.tribunal} className='form-1' />
                             </div>
                         </div>
                         <div className="popUpCreateLineFive">
